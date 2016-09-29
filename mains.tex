@@ -1,0 +1,111 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[12pt,a4paper]{article}
+\usepackage{makeidx}
+\usepackage{ctex}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage[dvipsnames,svgnames,table]{xcolor}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{ulem}
+\usepackage{titleoc}
+\usepackage{wrapfig}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fontspec}
+\setmainfont[Mapping=tex-text]{Times New Roman}
+\setCJKmainfont{標楷體}
+\XeTeXlinebreaklocale "zh"
+%\XeTeXlinebraekskip "0pt plus 1pt"
+\author{作者等}
+\title{企業競爭策略與產業競爭程度對避稅行為之影響}
+\usepackage[paperwidth=21cm,paperheight=29.7cm,top=3cm,right=3cm,bottom=3cm,left=3cm]{geometry}
+
+%設定版面
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{}
+\chead{}
+\rhead{\ctxflb 論文題目}
+\lfoot{}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\newcommand{\mybaselinestretch}{24pt}
+\renewcommand{\baselinestretch}{\mybaselinestretch}
+\parskip=2ex  % 段落之間的間隔為兩個 x 的高度
+%\parindent = 0Pt  % 這個打開 內縮就不管用了
+%\let\oldfootnote\footnote
+%\renewcommand\footnote[1]{\oldfootnote{%
+%\large\footnotesize\ignorespaces#1}}
+%\addtolength{\footnotesep}{2pt}
+
+%修改標題名稱為中文
+\renewcommand{\figurename}{圖}
+\renewcommand{\tablename}{表}
+\renewcommand{\contentsname}{\protect\makebox[3cm][s]{\ctxflb 目錄}}
+\renewcommand{\listfigurename}{\protect\makebox[4cm][s]{\ctxflb 圖目錄}}
+\renewcommand{\listtablename}{\protect\makebox[4cm][s]{\ctxflb 表目錄}}
+\renewcommand{\bibname}{\protect\makebox[5cm][s]{\ctxflb 參考文獻}}
+
+%改變章節的顯示方式
+\titleformat{\chapter}[display]{\centering\huge\sf} %raggedleft
+ {\ctxflb Chapter \thechapter\ }{1em}{}
+\titlelabel{\S\thetitle\quad}
+\titlespacing{\chapter}{0pt}{*0}{*2}
+\titlespacing{\section}{0pt}{*1}{*1}
+\titlespacing{\subsection}{0pt}{*1}{*1}
+\titlespacing{\subsubsection}{0pt}{*1}{*1}
+\ctxfdef{\chapter}{\ctxflb}
+\ctxfdef{\section}{\ctxfl}%\ctxfr}
+\ctxfdef{\subsection}{\ctxfl}
+
+\renewcommand{\headrulewidth}{1pt} % header 的直線; 0pt 則無線
+\newcommand\laref{\smallskip\noindent%
+\hangindent=\parindent}
+\newcommand{\ds}{^{**}}
+\newcommand{\os}{^{*}}
+\newcolumntype{d}[1]{D{.}{.}{#1}}
+\renewcommand{\textfraction}{0.15}
+\renewcommand{\topfraction}{0.85}
+\renewcommand{\bottomfraction}{0.65}
+\renewcommand{\floatpagefraction}{0.60}
+\abovecaptionskip=6pt
+\belowcaptionskip=6pt
+
+
+% new LaTeX commands
+
+
+\begin{document}
+\part*{1}
+
+\pagebreak{}
+
+
+\pagebreak{}
+
+\textbf{目錄}
+\tableofcontents %目錄
+\listoffigures %圖目錄
+\listoftables %表目錄
+
+
+
+\pagebreak{}
+
+
+\part*{2}
+\chapter{一、緒論}
+\section{一}
+
+
+
+
+
+
+
+\end{document}
